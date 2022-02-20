@@ -1,10 +1,10 @@
 # Templates for Maven pom.xml
 This document contains a few templates for your pom.xml that you might need when writing a module.
 ## Contents
-1. [Deploy to CraftyServers' Repository](#Deploy-to-CraftyServers'-Repository)
-2. [Include CraftyServers' Repository in your pom.xml](#Include-CraftyServers'-Repository-in-your-pom.xml)
-3. [Include a module dependency in your pom.xml](#Include-a-module-dependency-in-your-pom.xml)
-## Deploy to CraftyServers' Repository
+1. [Deploy to CraftyServers' repository](#deploy)
+2. [Include CraftyServers' Repository in your pom.xml](#include-repo)
+3. [Include a module dependency in your pom.xml](#include-dependency)
+## Deploy to CraftyServers' repository<a id='deploy'></a>
 The reopsitory is located at [CraftyServerMC/maven](https://github.com/CraftyServerMC/maven).  
 Thanks to user ["emmby"](https://stackoverflow.com/users/82156/emmby) in https://stackoverflow.com/questions/14013644/hosting-a-maven-repository-on-github for a great tutorial!
 ```XML
@@ -75,7 +75,7 @@ Thanks to user ["emmby"](https://stackoverflow.com/users/82156/emmby) in https:/
 ### Troubleshooting
  - Make sure you have permission to write to [CraftyServerMC/maven](https://github.com/CraftyServerMC/maven)
  - Make sure to fill out the "Name" field in your Github profile, otherwise commiting won't work!
-## Include CraftyServers' Repository in your pom.xml
+## Include CraftyServers' repository in your pom.xml<a id='include-repo'></a>
 ```XML
 <repositories>
   <repository>
@@ -88,7 +88,7 @@ Thanks to user ["emmby"](https://stackoverflow.com/users/82156/emmby) in https:/
   </repository>
 </repositories>
 ```
-## Include a module dependency in your pom.xml
+## Include a module dependency in your pom.xml<a id='include-dependency'></a>
 ```XML
 <dependencies>
   <dependency>
