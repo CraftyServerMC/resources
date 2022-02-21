@@ -1,0 +1,2 @@
+Read more about the project [here](https://github.com/CraftyServerMC/CraftyServer)!  
+Legal disclaimer: This project is not affiliated with Minecraft&trade; or Mojang&trade;/Microsoft&trade; in any way, shape or form.  

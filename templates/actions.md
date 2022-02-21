@@ -2,6 +2,7 @@
 This document contains a few templates for Github Actions that might be needed for module repositories. They should be stored in `.github/workflows`.
 ## Contents
 1. [Maven build test](#maven-test)
+2. [Dynamic readme](#dynamic-readme)
 ## Maven build test<a id='maven-test'></a>
 Stored in `maven.yml'
 ```YML
@@ -31,4 +32,39 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -X install --file pom.xml
+```
+## Dynamic readme<a id='dynamic-readme'></a>
+Stored in `dynamic-readme.yml`
+```YML
+name: Dynamic Template
+
+on:
+  push:
+    branches:
+      - main
+	schedule:
+      - cron:  '* 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update_templates:
+    name: "Update Markdown Templates"
+    runs-on: ubuntu-latest
+    steps:
+      - name: "📥  Fetching Repository Contents"
+        uses: actions/checkout@main
+
+      - name: "💾  Github Repository Metadata"
+        uses: varunsridharan/action-repository-meta@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: "💫  Dynamic Template Render"
+        uses: varunsridharan/action-dynamic-readme@main
+        with:
+          GLOBAL_TEMPLATE_REPOSITORY: CraftyServerMC/resources/templates/dynamic-readme-templates
+          files: |
+            README.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
