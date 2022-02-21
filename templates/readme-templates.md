@@ -19,8 +19,8 @@ Example:
 ```
 ## Version and module stage badges<a id='version-stage-badges'></a>
 ```markdown
-![projectstage](https://img.shields.io/badge/project%20stage-YOURSTAGE-YOURSTAGECOLOR)
-![projectstage](https://img.shields.io/badge/version-YOURVERSION-YOURSTAGECOLOR)
+![modulestage](https://img.shields.io/badge/module%20stage-YOURSTAGE-YOURSTAGECOLOR)
+![moduleversion](https://img.shields.io/badge/version-YOURVERSION-YOURSTAGECOLOR)
 ```
 Example:  
 ![modulestage](https://img.shields.io/badge/module%20stage-developement-red)
