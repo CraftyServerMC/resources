@@ -44,6 +44,8 @@ on:
       - main
     paths:
       - 'README.md'
+  schedule:
+    - cron: '0 0 * * *'
   workflow_dispatch:
 
 jobs:
