@@ -42,6 +42,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'README.md'
   workflow_dispatch:
 
 jobs:
