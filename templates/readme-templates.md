@@ -98,8 +98,8 @@ Example:
 ````markdown
 <!-- START readme-head.md -->
 <!-- END readme-head.md -->
-![projectstage](https://img.shields.io/badge/project%20stage-YOURSTAGE-YOURSTAGECOLOR)
-![projectstage](https://img.shields.io/badge/version-YOURVERSION-YOURSTAGECOLOR)
+![modulestage](https://img.shields.io/badge/module%20stage-YOURSTAGE-YOURSTAGECOLOR)
+![moduleversion](https://img.shields.io/badge/version-YOURVERSION-YOURSTAGECOLOR)
 <!-- START readme-shields.md -->
 <!-- END readme-shields.md -->
 ### (Description of the module)
